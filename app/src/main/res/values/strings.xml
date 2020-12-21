@@ -8,4 +8,5 @@
     <string name="height">Tinggi</string>
     <string name="length">Panjang</string>
     <string name="save">Simpan</string>
+    <string name="field_error_message">Field ini tidak boleh kosong</string>
 </resources>
