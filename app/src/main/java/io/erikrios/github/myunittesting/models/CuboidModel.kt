@@ -1,6 +1,6 @@
 package io.erikrios.github.myunittesting.models
 
-internal class CuboidModel {
+class CuboidModel {
     private var length: Double = 0.0
     private var width: Double = 0.0
     private var height: Double = 0.0
