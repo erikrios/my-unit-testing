@@ -57,4 +57,20 @@ class MainActivityTest {
         onView(withId(R.id.tv_result)).check(matches(isDisplayed()))
         onView(withId(R.id.tv_result)).check(matches(withText(dummySurfaceArea)))
     }
+
+    @Test
+    fun assertGetVolume() {
+        onView(withId(R.id.et_length)).perform(typeText(dummyLength), closeSoftKeyboard())
+        onView(withId(R.id.et_width)).perform(typeText(dummyWidth), closeSoftKeyboard())
+        onView(withId(R.id.et_height)).perform(typeText(dummyHeight), closeSoftKeyboard())
+
+        onView(withId(R.id.btn_save)).check(matches(isDisplayed()))
+        onView(withId(R.id.btn_save)).perform(click())
+
+        onView(withId(R.id.btn_calculate_volume)).check(matches(isDisplayed()))
+        onView(withId(R.id.btn_calculate_volume)).perform(click())
+
+        onView(withId(R.id.tv_result)).check(matches(isDisplayed()))
+        onView(withId(R.id.tv_result)).check(matches(withText(dummyVolume)))
+    }
 }
